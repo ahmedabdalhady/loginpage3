@@ -1,0 +1,115 @@
+body{
+    background-image: linear-gradient(to right,rgb(123, 47, 167),rgb(68, 7, 117));
+}
+.container{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 2px 1px 20px 3px rgb(32, 32, 34);
+}
+.container .left{
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-image: linear-gradient(to right,rgb(123, 47, 167),rgb(68, 7, 117));
+}
+.container .right{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container img{
+    width: 60%;
+    height: 90%;
+}
+.container .right .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .right .login input[type="text"], input[type="password"] {
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 10px 0px;
+    border-bottom: 2px solid rgb(138, 58, 230);
+    
+}
+.container .right .login input[type="text"]::placeholder,
+.container .right .login input[type="password"]::placeholder{
+    color: rgb(138, 58, 230);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform:capitalize;
+}
+.container .right .login input[type="submit"]{
+    width: 120px;
+    height: 40px;
+    border-radius: 26px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 50px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to right,rgb(123, 47, 167),rgb(107, 14, 184));
+}
+.container .right .login input[type="text"]:hover,
+.container .right .login input[type="password"]:hover{
+    border-bottom: 3px solid rgb(138, 58, 230);
+}
+.container .right .login input[type="submit"]:hover{
+    background-image: linear-gradient(to right,rgb(107, 14, 184),rgb(123, 47, 167));   
+}
+.container .right h1,h3{
+    color: rgb(138, 58, 230);
+}
+.container .right h1{
+    font-weight: bold;
+    text-transform:uppercase;
+}
+.container .right h3{
+    cursor: pointer;
+}
+@media (max-width:750px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .container .left{
+        border-radius: 25px ;
+        width: 100%;
+        height: 40%;
+        text-align: center;
+    }
+    
+    .container .right{
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+
+}
+
+
+
